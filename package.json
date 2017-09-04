@@ -7,9 +7,13 @@
     "commander": "^2.11.0"
   },
   "devDependencies": {},
-  "author": "JCharante <contactme@jcharante.com>",
-  "license": "",
+  "author": "JCharante <contactme@jcharante.com> (https://jcharante.com)",
+  "license": "UNLICENSED",
   "bin": {
-    "factotum": "./main.js"
+    "factotum": "./factotum.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/JCharante/factotum.git"
   }
 }
