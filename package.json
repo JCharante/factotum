@@ -1,0 +1,15 @@
+{
+  "name": "factotum",
+  "version": "1.0.0",
+  "description": "A CLI who does all kinds of work",
+  "main": "main.js",
+  "dependencies": {
+    "commander": "^2.11.0"
+  },
+  "devDependencies": {},
+  "author": "JCharante <contactme@jcharante.com>",
+  "license": "",
+  "bin": {
+    "factotum": "./main.js"
+  }
+}
