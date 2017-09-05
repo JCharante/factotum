@@ -4,14 +4,16 @@
 let program = require('commander');
 let fs = require('fs');
 
-let configPath = './config.json';
+let vars = require('./vars');
+let configPath = vars.configFilePath;
+
 let parsed = JSON.parse(fs.readFileSync(configPath, 'UTF-8'));
 
 program
     .action(function (dir) {
         parsed.music.remote.configDirectory = dir;
         fs.writeFile(configPath, JSON.stringify(parsed, null, 4), 'utf-8');
-        console.log(`Set your remoteclementine config directory to: ${dir}`)
+        console.log(`Set your remote Clementine config directory to: ${dir}`)
 
     })
     .parse(process.argv);

@@ -5,7 +5,9 @@ let program = require('commander');
 let exec = require('child_process').exec, child;
 let fs = require('fs');
 
-let configPath = './config.json';
+let vars = require('./vars');
+let configPath = vars.configFilePath;
+
 let parsed = JSON.parse(fs.readFileSync(configPath, 'UTF-8'));
 
 program
@@ -71,9 +73,7 @@ program
     })
     .parse(process.argv);
 
-var pkgs = program.args;
-
-if (!pkgs.length) {
-    console.error('packages required');
+if (!program.args.length) {
+    console.error('Subcommand Required');
     process.exit(1);
 }

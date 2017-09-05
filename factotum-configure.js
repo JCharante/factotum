@@ -7,6 +7,7 @@ let exec = require('child_process').exec, child;
 
 program
     .command('music [action]', 'Configure your music settings')
+    .command('init', 'Create / Update your config file')
     .parse(process.argv);
 
 var pkgs = program.args;

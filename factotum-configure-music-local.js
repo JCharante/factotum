@@ -6,8 +6,8 @@ let exec = require('child_process').exec, child;
 
 
 program
-    .command('musicDirectory [dir]', 'Set the local music directory')
-    .command('configDirectory [dir]', 'Set the local music config directory')
+    .command('musicDirectory [dir]', 'Set the local music directory (do not include trailing /)')
+    .command('configDirectory [dir]', 'Set the local music config directory (do not include trailing /)')
     .parse(process.argv);
 
 var pkgs = program.args;

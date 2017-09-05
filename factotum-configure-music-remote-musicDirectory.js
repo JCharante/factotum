@@ -4,7 +4,9 @@
 let program = require('commander');
 let fs = require('fs');
 
-let configPath = './config.json';
+let vars = require('./vars');
+let configPath = vars.configFilePath;
+
 let parsed = JSON.parse(fs.readFileSync(configPath, 'UTF-8'));
 
 program
