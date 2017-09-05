@@ -1,6 +1,6 @@
 {
   "name": "factotum",
-  "version": "1.1.0",
+  "version": "1.1.1",
   "description": "A CLI who does all kinds of work",
   "main": "main.js",
   "dependencies": {
