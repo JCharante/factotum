@@ -6,6 +6,5 @@
 
 ```bash
 $ sudo npm install -g factotum
-$ factotum
 $ factotum configure init
 ```
